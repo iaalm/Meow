@@ -10,6 +10,19 @@
 
 module.exports = (robot) ->
 
+  robot.router.post '/msg/txt', (request, response) ->
+    room = 'general'
+    # data   = if request.body.payload? then JSON.parse request.body.payload else request.body
+    source = if request.body.source? then request.body.source else 'unknow source'
+    data = request.body.data
+    robot.messageRoom room, "I have a message from #{source}: #{data}"
+    response.send 'OK'
+
+  robot.hear /wait ([0-9]+)/i, (res) ->
+    res.send 'I hear that!' 
+    setTimeout () ->
+      res.send "Times up!"
+    , 60 * 1000 * parseInt(res.match[1], 10 )
   # robot.hear /badger/i, (res) ->
   #   res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
   #
