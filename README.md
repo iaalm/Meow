@@ -217,4 +217,4 @@ you're having issues.
 
 This hubot has installed hubot-shell and hubot-alias.
 Some useful commands are also added in scrips/.
-To enable python script, you need to say "meow alias py=shell python3 -u scripts/script.py".
+To enable python script, you need to say `meow alias py=shell python3 -u scripts/script.py` or `meow alias py=spawn shell python3 -u scripts/script.py`.
