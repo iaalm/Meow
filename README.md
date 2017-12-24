@@ -212,3 +212,9 @@ Add the subdomain hubot should connect to. If you web URL looks like
 
 You may want to get comfortable with `heroku logs` and `heroku restart` if
 you're having issues.
+
+# Meow
+
+This hubot has installed hubot-shell and hubot-alias.
+Some useful commands are also added in scrips/.
+To enable python script, you need to say "meow alias py=shell python3 -u scripts/script.py".
