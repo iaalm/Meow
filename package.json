@@ -6,6 +6,7 @@
   "description": "I'm a cat!",
   "dependencies": {
     "hubot": "^2.19.0",
+    "hubot-alias": "^0.1.11",
     "hubot-diagnostics": "0.0.2",
     "hubot-google-images": "^0.2.7",
     "hubot-google-translate": "^0.2.1",
@@ -16,6 +17,7 @@
     "hubot-redis-brain": "0.0.4",
     "hubot-rules": "^0.1.2",
     "hubot-scripts": "^2.17.2",
+    "hubot-shell": "^1.0.2",
     "hubot-shipit": "^0.2.1",
     "hubot-slack": "^4.4.0"
   },
