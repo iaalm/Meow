@@ -23,6 +23,19 @@ module.exports = (robot) ->
     setTimeout () ->
       res.send "Times up!"
     , 60 * 1000 * parseInt(res.match[1], 10 )
+
+  robot.respond /redis get ([^ ]+) ([^ ]+)/i, (res) ->
+    robot.brain.set res.match[1] res.match[2]
+    res.reply 'done'
+
+  robot.respond /redis del ([^ ]+)/i, (res) ->
+    robot.brain.del res.match[1]
+    res.reply 'done'
+
+  robot.respond /redis get ([^ ]+)/i, (res) ->
+    ret = robot.brain.get res.match[1]
+    res.reply ret
+    
   # robot.hear /badger/i, (res) ->
   #   res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
   #
