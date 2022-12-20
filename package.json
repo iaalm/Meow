@@ -5,7 +5,7 @@
   "author": "iaalm <iaalmsimon@gmail.com>",
   "description": "I'm a cat!",
   "dependencies": {
-    "hubot": "^2.19.0",
+    "hubot": "^3.3.2",
     "hubot-alias": "^0.1.11",
     "hubot-diagnostics": "0.0.2",
     "hubot-google-images": "^0.2.7",
